@@ -62,7 +62,6 @@ void multiplyMat(){
 }
           
 int main(){
-  
   createRandomMat();
   showRandomMat();
   multiplyMat();
