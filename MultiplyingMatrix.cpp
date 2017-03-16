@@ -10,11 +10,14 @@ using namespace std;
 void createMat(){
 
   srand(time(NULL));
-  for( i = 0; i < SIZE; i++)
+
+//Filling first matrix with random values
+for( i = 0; i < SIZE; i++)
     for( j = 0; j < SIZE; j++) {
       firstMat[i][j] = rand() & 10;
     }
-
+	
+//Filling second matrix with random values
   for( i = 0; i < SIZE; i++)
     for( j = 0; j < SIZE; j++) {
       secondMat[i][j] = rand() & 10;
@@ -23,6 +26,7 @@ void createMat(){
 
 void showMat(){
 
+//Show first matrix 
  for( i = 0; i < SIZE; i++){
     for( j = 0; j < SIZE; j++) {
       cout<<firstMat[i][j]<<" ";
@@ -32,6 +36,7 @@ void showMat(){
 
   cout<<"\n\n";
 
+//Show second matrix
    for( i = 0; i < SIZE; i++){
     for( j = 0; j < SIZE; j++) {
       cout<<secondMat[i][j]<<" ";
@@ -42,17 +47,20 @@ void showMat(){
 
 void multiplyMat(){
 
+//Filling rezulting matrix with '0'
     for( i = 0; i < SIZE; i++)
         for( j = 0; j < SIZE; j++)
             rezMat[i][j] = 0;
 
+// Multipling of 2 matrix and put the rezult in rezMat[][]
     for (i = 0; i < SIZE; i++)
 		for (j = 0; j < SIZE; j++)
 			for (int k = 0; k < SIZE; k++)
                 rezMat[i][j] += firstMat[i][k] * secondMat[k][j];
 
     cout<<"\n";
-
+	
+// Show rezult of rezMat[][]
     for(int i = 0; i < SIZE; i++){
         for(int j = 0; j < SIZE; j++) {
             cout<<rezMat[i][j]<<" ";
