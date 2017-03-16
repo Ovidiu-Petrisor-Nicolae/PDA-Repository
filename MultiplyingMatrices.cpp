@@ -66,6 +66,5 @@ int main(){
     createMat();
     showMat();
     multiplyMat();
-
     return 0;
 }
