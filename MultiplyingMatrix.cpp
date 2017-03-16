@@ -52,7 +52,7 @@ void multiplyMat(){
         for( j = 0; j < SIZE; j++)
             rezMat[i][j] = 0;
 
-// Multipling of 2 matrix and put the rezult in rezMat[][]
+// Multipling of 2 matrix and puting the rezult in rezMat[][]
     for (i = 0; i < SIZE; i++)
 		for (j = 0; j < SIZE; j++)
 			for (int k = 0; k < SIZE; k++)
