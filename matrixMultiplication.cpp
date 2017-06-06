@@ -69,7 +69,7 @@ void multiplyMat(){
         }
 }
 
-int main(){
+int main(){ 
 
     createMat();
     showMat();
