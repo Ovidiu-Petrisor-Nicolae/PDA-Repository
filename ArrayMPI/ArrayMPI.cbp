@@ -42,5 +42,5 @@
 			<debugger />
 			<lib_finder disable_auto="1" />
 		</Extensions>
-	</Project>
+	</Project> 
 </CodeBlocks_project_file>
