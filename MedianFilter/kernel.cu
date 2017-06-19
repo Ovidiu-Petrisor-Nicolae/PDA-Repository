@@ -37,7 +37,7 @@ __global__ void _medianfilter(const element* signal, element* result)
 		int min = j;
 		for (int k = j + 1; k < 2 * RADIUS + 1; ++k)
 			if (window[k] < window[min])
-				min = k;
+				min = k; 
 		// Puts found minimum element in its place
 		const element temp = window[j];
 		window[j] = window[min];
