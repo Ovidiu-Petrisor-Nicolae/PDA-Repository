@@ -62,6 +62,7 @@ __global__ void kernel_calculate_sum(double * dev_array_sums,
 	{
 		shared_sum[tid] = 0;
 	}
+	//synchronize the local threads writing to the local memory cache
 	__syncthreads();
 	// do reduction in shared memory
 	for (unsigned int s = blockDim.x / 2; s>0; s >>= 1) {
